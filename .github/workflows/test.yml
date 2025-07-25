@@ -1867,7 +1867,7 @@ jobs:
           bash
       - name: Get branch name
         id: branch-name
-        uses: tj-actions/branch-names@v7
+        uses: tj-actions/branch-names@v9.0.0
         if: github.event_name == 'pull_request' && matrix.fetch-depth == 0
       - uses: nrwl/nx-set-shas@v3
         id: last_successful_commit
